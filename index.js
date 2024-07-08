@@ -9,7 +9,7 @@ const makeCommit = async n => {
 
     const { default: random } = await import('random');
 
-    const x = random.int(27, 54);
+    const x = random.int(0, 10);
     const y = random.int(0, 6);
 
     const DATE = moment().subtract(2, 'y').add(1, 'd').add(x, 'w').add(y, 'd').format();
